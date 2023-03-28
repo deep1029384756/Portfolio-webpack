@@ -1,0 +1,26 @@
+.footer{
+    min-height: 30vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $section-color;
+    color: $heading-color;
+    .footer__line1{
+        span{
+            color: $span-color;
+        }
+    }
+    .footer__line2{
+        display: flex;
+        flex-wrap: column wrap;
+        column-gap: 30px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .footer{
+       justify-content: center !important;
+       align-items: center !important;
+    }
+}

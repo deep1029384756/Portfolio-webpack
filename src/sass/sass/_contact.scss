@@ -1,0 +1,129 @@
+// get in touch
+.contact{
+    background-color: $section-color-2;
+    min-height: 100vh;
+    padding: 20px;
+    color:  $heading-color;
+
+    .contact__title{
+        @extend %title;
+     }
+     .contact__contact{
+         @extend %back-title;
+     }
+     .contact__title-line{
+         @extend %title-line;
+     }
+    .contact__row{
+        display: flex;
+        justify-content: space-around;
+        .contact__info{
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 20px;
+             text-align: center;
+            .contact__data{
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                .contact__address{
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                .contact__details{
+                    margin-bottom: 10px;
+                    .contact__for{
+                        display: flex;
+                        justify-content: center;
+                        column-gap: 5px;
+                        .label{
+                            color: $span-color;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                       
+                    }
+                }
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                font-size: 20px;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+       .contact__note{
+        display: block;
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 20px;
+        .contact__input{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            row-gap: 20px;
+            color: $headtext;
+        }
+        .inp1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+            
+        }
+        .input-name{
+            border: 1px solid $section-color;
+            background-color: $section-color;
+            padding: 13px;
+            width: 100%;
+            color: $headtext;
+            border-radius: 10px;
+        }
+        .contact__something{
+            height: 100px;
+            border: 1px solid $section-color;
+            background-color: $section-color;
+            border-radius: 20px;
+            color: $headtext;
+            padding: 7px;
+        }
+        .contact__button{
+            display: flex;
+            justify-content: center;
+            .button{
+                border: 1px solid $span-color;
+                padding: 15px;
+                background-color: $span-color;
+                color: $heading-color;
+                font-weight: 700;
+                border-radius: 50px;
+                justify-self: center;
+                transition: all 0.6s ease;
+            }
+            .button:hover{
+                filter: brightness(60%);
+            }
+        }
+    }
+    }
+}
+@media only screen and (max-width:800px){
+    .contact__note{
+        h3{
+            margin-top: 30px;
+        }
+    }
+    .contact__input{
+        flex-direction: column;
+    }
+}

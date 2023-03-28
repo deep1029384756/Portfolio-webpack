@@ -1,0 +1,44 @@
+.what-i-do{
+    background-color: $section-color-2;
+    min-height: 100vh;
+    padding: 20px;
+    h5{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .what-i-do__icon{
+        color: $span-color;
+        font-size: 30px;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+        background-color: $section-color;
+    }
+    .what-i-do__row1{
+       @extend %title;
+    }
+    .what-i-do__services{
+        @extend %back-title;
+    }
+    .what-to-do__title-line{
+        @extend %title-line;
+    }
+
+    .what-i-do__row{
+        display: flex;
+        color:  $heading-color;
+        justify-content: space-around;
+        .what-i-do__col{
+            padding: 20px;
+            display: flex;
+            column-gap: 20px;
+            .what-i-do__text{
+
+            }
+        }
+    }
+}

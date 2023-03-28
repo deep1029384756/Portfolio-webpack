@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- icons css -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- local css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <section class="header container-fluid">
+      <nav>
+        <div class="header__logo">Simone</div>
+
+        <!-- <div class="total-list"> -->
+        <ul class="header__total-list">
+          <li class="header__list cross">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#xmark-solid"></use>
+            </svg>
+          </li>
+          <li class="header__list"><a href="#home">Home</a></li>
+          <li class="header__list"><a href="#about">About</a></li>
+          <li class="header__list"><a href="#what-i-do">What i do</a></li>
+          <li class="header__list"><a href="#resume">Resume</a></li>
+          <li class="header__list"><a href="#portfolio">Portfolio</a></li>
+          <li class="header__list"><a href="#client">Client</a></li>
+          <li class="header__list"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="header__items">
+          <div class="header__menu-btn1">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#bars-solid"></use>
+            </svg>
+          </div>
+          <ul class="header__social-list">
+            <li class="header__list">
+              <svg height="20" width="20" class="svg-icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </li>
+            <!-- <label for="twitter">twitter</label> -->
+            <li class="header__list">
+              <svg height="20" width="20" class="svg-icon">
+                <use xlink:href="#facebook-f"></use>
+              </svg>
+            </li>
+            <!-- <label for="">facebook</label> -->
+            <li class="header__list">
+              <svg height="20" width="20" class="svg-icon">
+                <use xlink:href="#dribbble"></use>
+              </svg>
+            </li>
+            <!-- <label for="dribble">dribble</label> -->
+          </ul>
+        </div>
+        <!-- </div> -->
+      </nav>
+    </section>
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home__box">
+        <h1>Welcome</h1>
+        <div class="home__text">
+          <span class="home__typing"><b></b></span>
+        </div>
+        <div class="home__para">based in los angeles, california</div>
+        <button class="button">Hire me</button>
+      </div>
+      <!-- <div class="home__down-icon">
+            <i class="uil uil-angle-down down"></i>
+        </div> -->
+    </section>
+    <!-- scroll-up-button -->
+    <div class="scroll-up-button">
+      <svg height="20" width="20" class="svg-icon">
+        <use xlink:href="#chevron-up-solid"></use>
+      </svg>
+    </div>
+
+    <!-- About section -->
+    <section class="about container-fluid" id="about">
+      <div class="about__back-title">ABOUT ME</div>
+      <div class="about__row1">
+        <div class="about__title-text">Know me more</div>
+        <div class="about__title-line"></div>
+      </div>
+      <div class="about__container container">
+        <div class="about__row2 row">
+          <div class="about__para about__col col-md-7">
+            <h2>I'm <span>Simone Olivia,</span> a web developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              illo eius et dicta quaerat quod repudiandae, eveniet accusantium
+              quas incidunt dolorum impedit fugit ipsum consectetur libero qui
+              distinctio laudantium autem! <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem quis laboriosam saepe veniam hic animi unde vel
+              expedita neque pariatur dolores officiis quasi nam consequuntur
+              nobis ipsum, delectus aperiam.
+            </p>
+          </div>
+          <div class="about__details about__col col-md-4">
+            <div class="about__div">
+              <label for="about__name" class="about__question">Name: </label>
+              <span id="about__name">Simone OLivia</span>
+            </div>
+            <div class="about__div">
+              <label for="about__email" class="about__question">Email: </label>
+              <span id="about__email" class="about__email"
+                >chat@simone.com</span
+              >
+            </div>
+            <div class="about__div">
+              <label for="about__name" class="about__question">Age: </label>
+              <span id="about__name">28</span>
+            </div>
+            <div class="about__div">
+              <label for="about__name" class="about__question">From: </label>
+              <span id="about__name">Los Angeels, california</span>
+            </div>
+            <button class="button">Download CV</button>
+          </div>
+        </div>
+        <div class="about__row3 row">
+          <div class="about__achive col-md-5">
+            <div class="about__experience about__col1">
+              <h1>10+</h1>
+              Experience
+            </div>
+            <div class="about__clients about__col1">
+              <h1>250+</h1>
+              Clients
+            </div>
+          </div>
+          <div class="about__achive col-md-5">
+            <div class="about__projects about__col1">
+              <h1>650+</h1>
+              Projects
+            </div>
+            <div class="about__award about__col">
+              <h1>38</h1>
+              GetAward
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- what i do -->
+    <section class="what-i-do container-fluid" id="what-i-do">
+      <div class="what-i-do__services">SERVICES</div>
+      <div class="what-i-do__row1">
+        <div class="what-to-do__title-text">What I Do?</div>
+        <div class="what-to-do__title-line"></div>
+      </div>
+      <div class="what-i-do__row row">
+        <div class="what-i-do__graphic what-i-do__col col-md-4">
+          <div class="what-i-do__icon">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#react"></use>
+            </svg>
+          </div>
+          <div class="what-i-do__text">
+            <h5>Graphic design</h5>
+            <div class="what-i-do__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              rem delectus quia.
+            </div>
+          </div>
+        </div>
+        <div class="what-i-do__web-design what-i-do__col col-md-4">
+          <div class="what-i-do__icon">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#react"></use>
+            </svg>
+          </div>
+          <div class="what-i-do__text">
+            <h5>Web design</h5>
+            <div class="what-i-do__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              rem delectus quia.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what-i-do__row row">
+        <div class="what-i-do__ui-ux what-i-do__col col-md-4">
+          <div class="what-i-do__icon">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#react"></use>
+            </svg>
+          </div>
+          <div class="what-i-do__text">
+            <h5>UI/UX design</h5>
+            <div class="what-i-do__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              rem delectus quia.
+            </div>
+          </div>
+        </div>
+        <div class="what-i-do__app what-i-do__col col-md-4">
+          <div class="what-i-do__icon">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#react"></use>
+            </svg>
+          </div>
+          <div class="what-i-do__text">
+            <h5>App design</h5>
+            <div class="what-i-do__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              rem delectus quia.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what-i-do__row row">
+        <div class="what-i-do__ui-ux what-i-do__col col-md-4">
+          <div class="what-i-do__icon">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#react"></use>
+            </svg>
+          </div>
+          <div class="what-i-do__text">
+            <h5>Business Analysis</h5>
+            <div class="what-i-do__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              rem delectus quia.
+            </div>
+          </div>
+        </div>
+        <div class="what-i-do__app what-i-do__col col-md-4">
+          <div class="what-i-do__icon">
+            <svg height="20" width="20" class="svg-icon">
+              <use xlink:href="#react"></use>
+            </svg>
+          </div>
+          <div class="what-i-do__text">
+            <h5>SEO Marketing</h5>
+            <div class="what-i-do__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              rem delectus quia.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resume -->
+    <section class="resume container-fluid" id="resume">
+      <div class="resume__summary">SUMMARY</div>
+      <div class="resume__title">
+        <div class="resume__title-text">Resume</div>
+        <div class="resume__title-line"></div>
+      </div>
+      <div class="resume__row1 row">
+        <div class="resume__education resume__col col-md-5">
+          <h2>My Education</h2>
+          <div class="resume__school resume__folder">
+            <span>2000-2004</span>
+            <h3>Computer Science</h3>
+            <div>University of California</div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis eveniet eius quo.
+            </p>
+          </div>
+          <div class="resume__college resume__folder">
+            <span>2005-2008</span>
+            <h3>Bachelor Degree</h3>
+            <div>University of California</div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis eveniet eius quo.
+            </p>
+          </div>
+          <div class="resume__master resume__folder">
+            <span>2009-2012</span>
+            <h3>Master Degree</h3>
+            <div>University of California</div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis eveniet eius quo.
+            </p>
+          </div>
+        </div>
+        <div class="resume__experience resume__col col-md-5">
+          <h2>My Experience</h2>
+          <div class="resume__theme-forest resume__folder">
+            <span>2012-2013</span>
+            <h3>Jr. UI UX Designer</h3>
+            <div>University of California</div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis eveniet eius quo.
+            </p>
+          </div>
+          <div class="resume__dribble resume__folder">
+            <span>2014-2016</span>
+            <h3>Jr. Product Designer</h3>
+            <div>University of California</div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis eveniet eius quo.
+            </p>
+          </div>
+          <div class="resume__adobe resume__folder">
+            <span>2017-2019</span>
+            <h3>Product Designer</h3>
+            <div>University of California</div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis eveniet eius quo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="resume__title1">My Skills</h2>
+      <div class="resume__row2 row container-fluid">
+        <div class="resume__skills1 resume__col col-md-5">
+          <div class="resume__web-design resume__inside-col">
+            <div class="resume__bars">
+              <div class="resume__info">
+                <span>Web-design</span>
+                <span>80%</span>
+              </div>
+              <div class="resume__line html"></div>
+            </div>
+          </div>
+          <div class="resume__html-css resume__inside-col">
+            <div class="resume__bars">
+              <div class="resume__info">
+                <span>html-css</span>
+                <span>70%</span>
+              </div>
+              <div class="resume__line html"></div>
+            </div>
+          </div>
+          <div class="resume__javascript resume__inside-col">
+            <div class="resume__bars">
+              <div class="resume__info">
+                <span>javascript</span>
+                <span>60%</span>
+              </div>
+              <div class="resume__line html"></div>
+            </div>
+          </div>
+        </div>
+        <div class="resume__skills2 resume__col col-md-5">
+          <div class="resume__react-js resume__inside-col">
+            <div class="resume__bars">
+              <div class="resume__info">
+                <span>react-js</span>
+                <span>50%</span>
+              </div>
+              <div class="resume__line html"></div>
+            </div>
+          </div>
+          <div class="resume__angular-js resume__inside-col">
+            <div class="resume__bars">
+              <div class="resume__info">
+                <span>angular-js</span>
+                <span>70%</span>
+              </div>
+              <div class="resume__line html"></div>
+            </div>
+          </div>
+          <div class="resume__bootstrap resume__inside-col">
+            <div class="resume__bars">
+              <div class="resume__info">
+                <span>bootstrap</span>
+                <span>90%</span>
+              </div>
+              <div class="resume__line html"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resume__button">
+        <button class="button">Download CV</button>
+      </div>
+    </section>
+
+    <!-- My work -->
+    <section class="my-work" id="portfolio">
+      <div class="my-work__portfolio">PORTFOLIO</div>
+      <!-- slider -->
+      <div class="my-work__title">
+        <div class="my-work__title-text">My Work</div>
+        <div class="my-work__title-line"></div>
+      </div>
+      <div class="my-work__container">
+        <div class="my-work__navbar">
+          <ul class="my-work__work-links">
+            <li class="my-work__all folderbtn">All</li>
+            <li class="my-work__design folderbtn">Design</li>
+            <li class="my-work__brand folderbtn">Brand</li>
+            <li class="my-work__photos folderbtn">Photos</li>
+          </ul>
+        </div>
+        <div class="my-work__content container all">
+          <div class="my-work__row row">
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-brand project-1">
+                  <div class="my-work__text my-work__project-button1">
+                    <h3>Project1</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box project-2">
+                  <div class="my-work__text my-work__project-button2">
+                    <h3>Project2</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4 my-work__story-photos">
+              <div class="my-work__story1">
+                <div class="my-work__box project-3">
+                  <div class="my-work__text my-work__project-button3">
+                    <h3>Project3</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div
+                  class="my-work__box my-work__story-design design1 project-4"
+                >
+                  <div class="my-work__text my-work__project-button4">
+                    <h3>Project4</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-design project-5">
+                  <div class="my-work__text my-work__project-button5">
+                    <h3>Project5</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- container 2 -->
+        <div class="my-work__content container design">
+          <div class="my-work__row row">
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-brand project-1">
+                  <div class="my-work__text my-work__project-button1">
+                    <h3>Project6</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box project-2">
+                  <div class="my-work__text my-work__project-button2">
+                    <h3>Project6</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4 my-work__story-photos">
+              <div class="my-work__story1">
+                <div class="my-work__box project-3">
+                  <div class="my-work__text my-work__project-button3">
+                    <h3>Project3</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div
+                  class="my-work__box my-work__story-design design1 project-4"
+                >
+                  <div class="my-work__text my-work__project-button4">
+                    <h3>Project4</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-design project-5">
+                  <div class="my-work__text my-work__project-button5">
+                    <h3>Project5</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- container 3 -->
+        <div class="my-work__content container brand">
+          <div class="my-work__row row brand">
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-brand project-1">
+                  <div class="my-work__text my-work__project-button1">
+                    <h3>Project9</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box project-2">
+                  <div class="my-work__text my-work__project-button2">
+                    <h3>Project2</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4 my-work__story-photos">
+              <div class="my-work__story1">
+                <div class="my-work__box project-3">
+                  <div class="my-work__text my-work__project-button3">
+                    <h3>Project3</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div
+                  class="my-work__box my-work__story-design design1 project-4"
+                >
+                  <div class="my-work__text my-work__project-button4">
+                    <h3>Project4</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-design project-5">
+                  <div class="my-work__text my-work__project-button5">
+                    <h3>Project5</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- container 4 -->
+        <div class="my-work__content container photos">
+          <div class="my-work__row row">
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-brand project-1">
+                  <div class="my-work__text my-work__project-button1">
+                    <h3>Project12</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box project-2">
+                  <div class="my-work__text my-work__project-button2">
+                    <h3>Project2</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4 my-work__story-photos">
+              <div class="my-work__story1">
+                <div class="my-work__box project-3">
+                  <div class="my-work__text my-work__project-button3">
+                    <h3>Project3</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-work__col col-md-4">
+              <div class="my-work__story">
+                <div
+                  class="my-work__box my-work__story-design design1 project-4"
+                >
+                  <div class="my-work__text my-work__project-button4">
+                    <h3>Project4</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+              <div class="my-work__story">
+                <div class="my-work__box my-work__story-design project-5">
+                  <div class="my-work__text my-work__project-button5">
+                    <h3>Project5</h3>
+                    category
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client speak section -->
+    <section class="client-speak" id="client">
+      <div class="client-speak__testimonial">TESTIMONIAL</div>
+      <div class="client-speak__title">
+        <div class="client-speak__title-text">Client Speak</div>
+        <div class="client-speak__title-line"></div>
+      </div>
+      <div class="client-speak__container">
+        <!-- //sliderode -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-speak__heading">
+                <img height="70px" width="70px" src="img/img1.jpg" alt="hey" />
+                <div class="client-speak__name">
+                  <h3>Patrick Cary</h3>
+                  <p>Freelancer from USA</p>
+                </div>
+              </div>
+              <div class="client-speak__about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Quibusdam blanditiis laudantium quasi sit ipsum cum sunt
+                officia,<br />
+                vero illo dolore labore ducimus ullam harum similique,<br />
+                optio, praesentium
+              </div>
+              <div class="client-speak__stars">
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-speak__heading">
+                <img height="70px" width="70px" src="img/img2.jpg" alt="hey" />
+                <div class="client-speak__name">
+                  <h3>Dannis Jacques</h3>
+                  <p>Founder from India</p>
+                </div>
+              </div>
+              <div class="client-speak__about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Quibusdam blanditiis laudantium quasi sit ipsum cum sunt
+                officia,<br />
+                vero illo dolore labore ducimus ullam harum similique,<br />
+                optio, praesentium
+              </div>
+              <div class="client-speak__stars">
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-speak__heading">
+                <img height="70px" width="70px" src="img/img3.jpg" alt="hey" />
+                <div class="client-speak__name">
+                  <h3>Jay Shah</h3>
+                  <p>User from USA</p>
+                </div>
+              </div>
+              <div class="client-speak__about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Quibusdam blanditiis laudantium quasi sit ipsum cum sunt
+                officia,<br />
+                vero illo dolore labore ducimus ullam harum similique,<br />
+                optio, praesentium
+              </div>
+              <div class="client-speak__stars">
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-speak__heading">
+                <img height="70px" width="70px" src="img/img4.jpg" alt="hey" />
+                <div class="client-speak__name">
+                  <h3>Chris Tom</h3>
+                  <p>Developer from Sydney</p>
+                </div>
+              </div>
+              <div class="client-speak__about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Quibusdam blanditiis laudantium quasi sit ipsum cum sunt
+                officia,<br />
+                vero illo dolore labore ducimus ullam harum similique,<br />
+                optio, praesentium
+              </div>
+              <div class="client-speak__stars">
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+                <svg height="20" width="20" class="svg-icon">
+                  <use xlink:href="#star-solid"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section-->
+    <section class="contact container-fluid" id="contact">
+      <div class="contact__contact">CONTACT</div>
+      <div class="contact__title">
+        <div class="contact__title-text">Get in Touch</div>
+        <div class="contact__title-line"></div>
+      </div>
+      <div class="contact__row row">
+        <div class="contact__info col-md-4">
+          <div class="contact__data">
+            <div class="contact__address">Address</div>
+            <div>
+              4th Floor, Plot No.22, <br />
+              145 Murphy Canyon Rd. <br />
+              San Diego CA 2028
+            </div>
+            <div class="contact__details">
+              <div class="contact__for">
+                <div class="contact__phone-label label">
+                  <svg height="20" width="20" class="svg-icon">
+                    <use xlink:href="#phone-solid"></use>
+                  </svg>
+                </div>
+                <div class="contact__text">(060) 444 434 444</div>
+              </div>
+              <div class="contact__for">
+                <div class="contact__tele label">
+                  <svg height="20" width="20" class="svg-icon">
+                    <use xlink:href="#tty-solid"></use>
+                  </svg>
+                </div>
+                <div class="contact__text">(060) 444 434 444</div>
+              </div>
+              <div class="contact__for">
+                <div class="contact__email label">
+                  <svg height="20" width="20" class="svg-icon">
+                    <use xlink:href="#envelope-solid"></use>
+                  </svg>
+                </div>
+                <div class="contact__text">chat@simone.com</div>
+              </div>
+            </div>
+          </div>
+          <h3>FOLLOW ME</h3>
+          <ul>
+            <li>
+              <svg height="20" width="20" class="svg-icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </li>
+            <li>
+              <svg height="20" width="20" class="svg-icon">
+                <use xlink:href="#facebook-f"></use>
+              </svg>
+            </li>
+            <li>
+              <svg height="20" width="20" class="svg-icon">
+                <use xlink:href="#dribbble"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="contact__note col-md-8">
+          <h3>SEND US A NOTE</h3>
+          <div class="contact__input">
+            <div class="inp1">
+              <input
+                type="text"
+                placeholder="Name"
+                class="contact__name input-name"
+              />
+            </div>
+            <div class="inp1">
+              <input
+                type="email"
+                placeholder="Email"
+                class="contact__email input-name"
+              />
+            </div>
+          </div>
+          <textarea
+            name="something"
+            class="contact__something"
+            placeholder="Tell us something about yourself"
+          ></textarea>
+          <div class="contact__button">
+            <button class="button">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- modals -->
+    <section class="modals container-fluid">
+      <div class="modals__background">
+        <button class="modals__button">
+          <i class="uil uil-times color"></i>
+        </button>
+        <div class="modals_title">Project Title</div>
+        <div class="modals__row row">
+          <div class="modals__col col-md-5">
+            <!-- //swiper image -->
+            <img class="modals__img" height="400" width="300" src="" alt="" />
+          </div>
+          <div class="modals_col modals__data col-md-7">
+            <div class="modals__info">
+              <h5>Project Info:</h5>
+              <div class="modals__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem optio nesciunt obcaecati sapiente a? Nostrum,
+                iusto ipsa? Assumenda reiciendis cum accusantium iure alias
+                quibusdam, earum ad non expedita recusandae necessitatibus.
+              </div>
+            </div>
+            <div class="modals__details">
+              <h5>Project Details</h5>
+              <div class="about__div">
+                <label for="about__name" class="about__question"
+                  >Client:
+                </label>
+                <span id="about__name">Simone OLivia</span>
+              </div>
+              <div class="about__div">
+                <label for="about__email" class="about__question"
+                  >Technlogies:
+                </label>
+                <span id="about__email">chat@simone.com</span>
+              </div>
+              <div class="about__div">
+                <label for="about__name" class="about__question"
+                  >Industry:
+                </label>
+                <span id="about__name">28</span>
+              </div>
+              <div class="about__div">
+                <label for="about__name" class="about__question">Date: </label>
+                <span id="about__name">Los Angeels, california</span>
+              </div>
+              <div class="about__div">
+                <label for="about__name" class="about__question">URL: </label>
+                <span id="about__name">Los Angeels, california</span>
+              </div>
+              <div class="about__div1">
+                <label for="about__name" class="about__question">Share: </label>
+                <div class="modals__socials">
+                  <li class="header__list">
+                    <i class="uil uil-twitter" id="twitter"></i>
+                  </li>
+                  <li class="header__list">
+                    <i class="uil uil-facebook-f" id="facebook"></i>
+                  </li>
+                  <li class="header__list">
+                    <i class="uil uil-dribbble" id="dribble"></i>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer__line1">
+        Copyright © 2023 <span>Simone</span>. All Rights Reserved.
+      </div>
+      <div class="footer__line2">
+        <div class="line2__text">Terms & Policy</div>
+        <div class="line2__text">Disclaimer</div>
+      </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- local js -->
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>

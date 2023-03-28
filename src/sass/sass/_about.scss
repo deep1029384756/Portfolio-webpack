@@ -1,0 +1,102 @@
+// about scss
+
+.about{
+    background-color: $section-color;
+    min-height: 100vh;
+    padding: 20px;
+    .about__back-title{
+        @extend %back-title;
+    }
+    .about__row1{
+        @extend %title
+    }
+    .about__title-line{
+       @extend %title-line;
+    }
+    .about__row2{
+        margin-top: 50px;
+        // display: flex;
+        justify-content: space-between;
+        // row-gap: 40px;
+        // padding-right: 60px;
+        .about__para{
+           // text-align: center ;
+            color: $headtext;
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 20px;
+            font-size: 16px;
+            @media only screen and  (max-width:800px){
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            h2{
+                color: $heading-color;
+                font-weight: 1000;
+                span{
+                    color: $span-color;
+                }
+            }
+        }
+        .about__details{
+            color: $headtext;
+            .about__div{
+                border-bottom: 1px solid $para-color;
+                row-gap: 20px;
+                margin-bottom: 20px;
+            }
+           label{
+                color:white;
+            }
+            .button{
+                border: 1px solid $span-color;
+                padding: 15px;
+                width: 150px;
+                background-color: $span-color;
+                color: $heading-color;
+                font-weight: 700;
+                border-radius: 50px;
+                transition: all 0.6s ease;
+            }
+            .button:hover{
+                filter: brightness(65%);
+            }
+            .about__email{
+                color: $span-color;
+            }
+        }
+    }
+    .about__row3{
+        display: flex;
+        margin-top: 40px;
+        column-gap: 50px;
+        justify-content: center;
+        color: $headtext;
+        .about__col1{
+            border-right: 1px solid rgb(109, 103, 103);
+            padding: 30px;
+            @media only screen and  (max-width:800px){
+                border-color: $section-color ;
+            }
+        }
+        .about__col{
+            padding: 30px;
+        }
+        .about__achive{
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width:800px){
+                display: flex;
+                justify-content: space-around;
+            }
+            .about__award{
+                @media only screen and (max-width:800px){
+                    position: relative;
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,162 @@
+.resume{
+    background-color: $section-color;
+    min-height: 100vh;
+    padding: 20px;
+    color:  $heading-color;
+
+    .resume__summary{
+        @extend %back-title;
+    }
+    .resume__title{
+        @extend %title;
+    }
+    .resume__title-line{
+        @extend %title-line;
+    }
+
+    .resume__row1{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 20px;
+        // column-gap: 20px;
+        .resume__education{
+            width: 100%;
+        }
+       
+        .resume__col{
+            display: flex;
+          flex-direction: column;
+            row-gap: 20px;
+            width: 100%;
+            .resume__folder{
+                padding: 40px;
+                background-color: $nav-color;
+                border-radius: 10px;
+                // width: 500px;
+                span{
+                    background-color: $span-color;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
+                h3{
+                    margin-top: 10px;
+                }
+                div{
+                    color: $span-color;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .resume__title1{
+        margin-top: 70px;
+        margin-left: 65px;
+        @media only screen and (max-width:800px){
+            position: relative;
+            right: 5px;
+        }
+    }
+    .resume__row2{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 100px;
+        @media only screen and (max-width:800px){
+            flex-wrap: wrap;
+        }
+        h2{
+            // margin-left: 100px;
+        }
+        .resume__col{
+            // padding: 40px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            .resume__inside-col{
+                width: 100%;
+            }
+                .resume__bars{
+                    margin-bottom: 15px;
+                }
+                .resume__info{
+                   display: flex;
+                   margin-bottom: 5px;
+                   align-items: center;
+                   justify-content: space-between; 
+                }
+                span{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                .resume__line{
+                    height: 8px;
+                    border-radius: 10px;
+                    width: 100%;
+                    background-color: $section-color-1;
+                    position: relative;
+                }
+                .resume__line::before{
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 80%;
+                    left: 0;
+                    top: 0;
+                    background-color: $span-color;
+                }
+                .resume__react-js {
+                    .resume__line::before{
+                        width: 50%;
+                    }
+                }
+    
+                .resume__html-css{
+                    .resume__line::before{
+                        width: 70%;
+                    }
+                }
+                .resume__javascript {
+                    .resume__line::before{
+                        width: 60%;
+                    }
+                }
+                .resume__bootstrap {
+                    .resume__line::before{
+                        width: 90%;
+                    }
+                }
+                .resume__angular-js{
+                    .resume__line::before{
+                        width: 70%;
+                    }
+                }
+            }
+    }
+    .resume__button{
+        margin-top: 40px;
+        margin-bottom: 40px;
+         display: flex;
+         justify-content: center;
+         .button{
+            padding: 10px;
+            background-color: $section-color;
+            border: 3px solid $section-color-2;
+            border-radius: 40px;
+            color: $headtext;
+            width: 200px;
+         }
+        .button:hover{
+            background-color: $section-color-2 ;
+            color: $question-color;
+            transition: all 0.5s;
+        }
+    }
+}
+
+@media only screen and (max-width:800px){
+    .resume__experience{
+     margin-top: 40px;       
+    }
+}
+

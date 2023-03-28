@@ -1,0 +1,234 @@
+//colors
+$nav-color :#111111;
+$section-color-1:#141116;
+$section-color:#212529;
+$headtext : #d0d0d0;
+$heading-color: #ffffff;
+$span-color:#20c997;
+$question-color:#d6e1e4;
+$section-color-2:#343a40;
+$para-color:#3c3a40;
+$icons-color:#212529;
+
+//titles
+%back-title{
+        position: relative;
+        top: 60px;
+        opacity: 0.05;
+        color:  $heading-color;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 120px;
+        font-weight: 700;
+        // tab view
+        @media only screen and (max-width:800px){
+            font-size: 85px;
+        }
+        //mobile view
+        @media only screen and (max-width:500px){
+            font-size: 58px;
+        }
+}
+%title{
+    position: relative;
+        bottom: 60px;
+        margin-top: 10px;
+        color:  $heading-color;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 700;
+        @media only screen and (max-width:800px){
+            bottom: 40px;
+        }
+        //mobile view
+        @media only screen and (max-width:500px){
+            bottom: 25px;
+        }
+}
+%title-line{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $span-color;
+    width: 80px;
+    height: 2px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+// scroll-up-button
+.scroll-up-button{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: rgba(0,0,0.5);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: $heading-color;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 30px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3 ease;
+}
+.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-button:hover{
+    filter: brightness(90%);
+    background-color: $span-color;
+}
+// extra class
+.sticky{
+    background-color: rgba(0,0,0.5);
+    padding: 11px 0;
+    .menu{
+        .a{
+            color: white;
+        }
+    }
+}
+//icons
+symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// menu btn
+
+//header
+@import "sass/header";
+
+// home section
+@import "sass/home";
+
+// About section
+
+@import "sass/about";
+
+// what i do section
+@import "sass/what-i-do";
+
+// resume
+@import "sass/resume";
+
+// my work
+@import "sass/portfolio";
+
+// client speak
+@import "sass/client";
+
+//contact
+@import "sass/contact";
+
+// footer
+@import "sass/footer";
+
+// modals
+@import "sass/modals";
+
+.showmodal{
+    visibility: visible; 
+    opacity: 1;
+}
+.back{
+    background-color: rgba(0,0,0,0.6);
+}
+.active{
+    top: 57px !important;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+.cross{
+    visibility: hidden;
+    font-size: 25px;
+    cursor: pointer;
+}
+.cross:hover{
+    color: $span-color;
+}
+// responsiveness
+@media only screen and (max-width:800px){
+   
+    .header{
+        nav{
+            & .header__items{
+                & .header__menu-btn1{
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .cross{
+        visibility: visible;
+    }
+    .header__logo{
+        display: block;
+    }
+    
+    .header__total-list{
+        position: absolute;
+        height: fit-content;
+        width: 100%;
+         top: -1000%;
+        background-color: #141116;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 40px;
+        transition: all 0.3s ease;
+        li{
+            display: block;
+            a{
+                display: inline-block;
+                margin: 20px 0;
+                font-size: 25px;
+            }
+        }
+    }
+    .modals{
+        left:60px
+    }
+    .modals__data{
+        margin-top: 40px;
+    }
+    .resume__folder{
+        margin-right: 30px;
+    }
+
+
+}
+@media only screen and (min-width:500px) and (max-width:800px){
+    .about__experience {
+        border-bottom: 1px solid #212529 ;
+        padding-right: 46.5px ;
+    }
+
+}

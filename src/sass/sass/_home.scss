@@ -1,0 +1,64 @@
+// for home component
+
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../img3.jpg");
+    min-height: 100vh;
+    color: $span-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .home__box{
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 20px;
+        align-items: center;
+        h1{
+            color: $heading-color;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .home__typing {
+            color: $heading-color;
+            font-size: 70px;
+            font-weight: 200;
+            @media only screen and (max-width:800px){
+                font-size: 45px;
+                font-weight: 700;
+            }
+            @media only screen and (max-width:500px){
+                font-size: 35px;
+                font-weight: 500;
+            }
+        }
+        .home__para{
+            color: #d0d0d0;
+            font-size: 20px;
+        }
+        button{
+            padding: 12px;
+            width: 130px;
+            background:none;
+            border: 3px solid $span-color;
+            border-radius: 20px;
+            color:  $span-color;
+            transition: all 0.6s ease;
+        }
+        .button:hover{
+            background-color: $span-color;
+            color: $heading-color;
+        }
+    }
+    .home__down-icon{
+        font-size: 40px;
+        position: relative;
+        margin-top:  80px;
+        animation: btn-down 2s linear infinite; 
+    }   
+    // @keyframes home__down-icon{
+    //     0%{
+    //         top
+    //     }
+    // } 
+    
+}

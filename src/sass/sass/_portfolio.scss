@@ -1,0 +1,157 @@
+.my-work{
+    background-color: $section-color-2;
+    min-height: 100vh;
+    padding: 20px;
+    color:  $heading-color;
+    .my-work__portfolio{
+        @extend %back-title;
+    }
+    .my-work__title{
+        @extend %title;
+    }
+    .my-work__title-line{
+        @extend %title-line;
+    }
+    .my-work__navbar{
+        display: flex;
+        justify-content: center;
+        .my-work__work-links{
+            display: flex;
+            flex-flow: row nowrap;
+            list-style: none;
+            column-gap: 40px;
+            li{
+                color:$headtext;
+                border-bottom: 1px solid  $section-color-2;
+            }
+            li:hover{
+                color: $span-color;
+                cursor: pointer;
+            }
+            .color{
+                border-color: $span-color;
+                color: $span-color;
+            }
+        }
+    }
+    .all{
+        display: none;
+    }
+    .design{
+        display: none;
+    }
+    .brand{
+        display: none;
+    }
+    .photos{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .my-work__row{
+        display: flex;
+        justify-content: flex-start;
+
+        .my-work__story{
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            .my-work__box{
+                height: 200px;
+                width: 200px;
+                background-image: url("../img/img1.jpg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 1 ease;
+                .my-work__text{
+                    cursor: pointer;
+                    display: none;
+                }
+                @media only screen and (max-width:800px){
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+            .project-1{
+                background-image: url("../img/img6.jpg");
+            }
+            .project-1:hover{
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/img6.jpg");
+                .my-work__text{
+                    display: block;
+                }
+            }
+            .project-2{
+                background-image: url("../img/img7.jpg");
+            }
+            .project-2:hover{
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/img7.jpg");
+                .my-work__text{
+                    display: block;
+                }
+            }
+            .project-4{
+                background-image: url("../img/img9.jpg");
+            }
+            .project-4:hover{
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/img9.jpg");
+                .my-work__text{
+                    display: block;
+                }
+            }
+            .project-5{
+                background-image: url("../img/img10.jpg");
+            }
+            .project-5:hover{
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/img10.jpg");
+                .my-work__text{
+                    display: block;
+                }
+           }
+            .hide{
+                display:none
+            }
+        }
+        .my-work__story1{
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            .my-work__box{
+                height: 400px;
+                width: 300px;
+                background-image: url("../img/img1.jpg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 1 ease;
+                .my-work__text{
+                    cursor: pointer;
+                    display: none;
+                }
+                @media only screen and (max-width:800px){
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+            .project-3{
+                background-image: url("../img/img8.jpg");
+            }
+            .project-3:hover{
+                background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/img8.jpg");
+                .my-work__text{
+                    display: block;
+                }
+            }
+            .hide{
+                display:none
+            }
+        }
+    }
+    .hide{
+        display:none
+    }
+}
+
+

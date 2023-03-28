@@ -1,0 +1,61 @@
+.modals{
+    position: fixed;
+    top: 0;
+    background-color: $section-color-2;
+    min-height: 100vh;
+    left: 120px;
+    width:80% !important;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  $heading-color;
+    visibility: hidden; 
+     opacity: 0;
+     z-index:10000;
+     .modals__background{
+        // position: static;
+     }
+    .modals_title{
+        color:  $heading-color;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .modals__col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modals__info{
+        margin-bottom: 30px;
+    }
+    .modals__details{
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 10px;
+        .about__div{
+            border-bottom: 1px solid $icons-color;
+        }
+        .about__div1{
+            display: flex;
+            column-gap: 10px;
+            li{
+                list-style: none;
+                display: inline;
+            }
+        }
+    }
+    .modals__button{
+        height: 10%;
+    width: 40px;
+    margin-left: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    /* align-self: flex-start; */
+    background-color: rgba(0, 0,0, 0);
+    border: 1px solid rgba(0, 0,0, 0);
+    border-radius: 50%;
+    padding: 5px;
+    }
+}
